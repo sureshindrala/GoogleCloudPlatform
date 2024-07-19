@@ -47,11 +47,11 @@ gcloud compute firewall-rules create icmp-allow-network-3 --direction=INGRESS --
 
 echo Create instance in each created subnet
 
-gcloud compute instances create instance-1 --zone=us-central1-a --machine-type=f1-micro --subnet=subnet-1a
+gcloud compute instances create instance-1 --zone=us-central1-a --machine-type=e2-small --subnet=subnet-1a
 
-gcloud compute instances create instance-2 --zone=us-central1-a --machine-type=f1-micro --subnet=subnet-2a
+gcloud compute instances create instance-2 --zone=us-central1-a --machine-type=e2-small --subnet=subnet-2a
 
-gcloud compute instances create instance-3 --zone=us-central1-a --machine-type=f1-micro --subnet=subnet-3a
+gcloud compute instances create instance-3 --zone=us-central1-a --machine-type=e2-small --subnet=subnet-3a
 
 
 echo Setup complete, proceed to establish a VPC peering
